@@ -8,14 +8,30 @@
 // const dimension = [width, height]
 // console.log(dimension);
 
-const pole_height = 80 
-function calculate(value){
-    let new_value= value*2.54;
-    return new_value;
+// const pole_height = 80 
+// function calculate(value){
+//     let new_value= value*2.54;
+//     return new_value;
+// }
+
+// let width = calculate(200);
+// let height = calculate(pole_height);
+
+// const dimensions=[width, height]
+// console.log(dimensions);
+
+// Function Expressions
+
+function addValues(num1, num2){
+    return num1+num2
 }
 
-let width = calculate(200);
-let height = calculate(pole_height);
-
-const dimensions=[width, height]
-console.log(dimensions);
+const firstValue = addValues(15, 85)
+const secondValue = addValues(50, 50)
+// function expression
+const add = function (num1, num2){
+    return num1+num2
+}
+const thirdValue = add(5, 6) 
+const values = [firstValue, secondValue, thirdValue]
+console.log(values);
